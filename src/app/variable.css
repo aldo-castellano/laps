@@ -1,0 +1,8 @@
+:root {
+  --tablet: 480px;
+  --laptop: 1080px;
+  --pc: 1200px;
+  --backgound: #fefefe;
+  --backgroundHeader: linear-gradient(90deg, #4ad7e0 1.6%, #76a2e4 100%);
+  --colorTextLigth: #ffffff;
+}
