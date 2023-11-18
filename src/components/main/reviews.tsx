@@ -50,9 +50,9 @@ export default function Reviews() {
     <div className={toolStyles.container}>
       <h2>Reseñas</h2>
       <div className={styles.container_card}>
-        {cards.map((card: { name: string; reviews: string }) => {
+        {cards.map((card: { name: string; reviews: string }, index: number) => {
           return (
-            <div className={styles.card}>
+            <div key={index} className={styles.card}>
               <p className={styles.name}>{card.name}</p>
               <article className={styles.review}>{card.reviews}</article>
             </div>
