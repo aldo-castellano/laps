@@ -1,0 +1,15 @@
+:root {
+  --tablet: 480px;
+  --laptop: 1080px;
+  --pc: 1200px;
+  --backgound: #fefefe;
+  --backgroundHeader: linear-gradient(
+    90deg,
+    rgba(74, 215, 224, 0.59) 1.6%,
+    rgba(118, 162, 228, 0.59) 100%
+  );
+  --backgroundGradient: linear-gradient(90deg, #4ad7e0 1.6%, #76a2e4 100%);
+  --colorTextLigth: #ffffff;
+  --roboto: var(--roboto);
+  --primaryButton: #ff9700;
+}
