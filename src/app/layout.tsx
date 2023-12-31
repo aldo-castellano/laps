@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/generic/header";
+import { Roboto, Righteous } from "next/font/google";
+import "@/styles/general/globals.css";
+import Header from "@/app/header/header";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["400", "700", "900"],
+  subsets: ["latin"],
+  variable: "--roboto",
+});
+const righteous = Righteous({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--righteous",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +26,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${righteous.variable} ${roboto.variable} `}
+        suppressHydrationWarning={true}
+      >
         <Header />
 
         {children}
