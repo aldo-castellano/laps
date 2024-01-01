@@ -9,19 +9,44 @@
   text-align: center;
   margin: 0 0 2rem 0;
 }
-
-.textInput {
+.containerForm {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
 }
-.textInput input {
+.containerInput,
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.containerInput input {
   border: 1.5px solid var(--primmaryColor);
   padding: 0.7rem;
   border-radius: 12px;
 }
-.containerForm {
+.textarea textarea {
+  border: 1.5px solid var(--primmaryColor);
+  padding: 0.7rem;
+  border-radius: 12px;
+  resize: vertical;
+  min-height: 5rem;
+}
+
+.number input {
+  max-width: 4rem;
+}
+.number > div {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  align-items: flex-end;
+  gap: 0.4rem;
+  max-width: 100%;
+}
+.containerCheckbox {
+  display: flex;
+  gap: 1rem;
+}
+.containerCheckbox a {
+  color: rgb(77, 77, 245);
+  text-decoration: underline;
 }

@@ -20,20 +20,18 @@ export default function Header() {
             <p className={styles.subtitle}>LIMPIEZA Y AMBIENTE</p>
           </div>
           <div className={styles.links}>
-            <Link href={"#"}>Contatar</Link>
+            <Link href={"#"}>Contactar</Link>
             <Link href={"#"}>Presupuesto</Link>
           </div>
         </div>
         <div className={`${stylesTools.container} ${styles.container_us}`}>
           <div className={styles.us}>
-            <h2 className={styles.title_us}>Nosotros</h2>
+            <h2 className={styles.title_us}>¿Listo para empezar?</h2>
             <p>
-              Liliana padovani se especializa en servicios de limpieza de
-              oficinas. Nuestro equipo altamente capacitado utiliza tecnología
-              de vanguardia y productos respetuosos con el medio ambiente para
-              garantizar una limpieza eficaz y personalizada. Contáctenos para
-              mantener su entorno de trabajo limpio y saludable.
-            </p>
+              Simplificamos la limpieza para ti. En LAPS, ofrecemos soluciones
+              de limpieza personalizadas que se adaptan a tus necesidades.
+              Descubre la comodidad de un espacio impecable con solo un clic.
+            </p>{" "}
             <Button>solicitar presupuesto</Button>
           </div>
         </div>
