@@ -1,0 +1,27 @@
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+}
+.title {
+  color: var(--primmaryColor);
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.textInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.textInput input {
+  border: 1.5px solid var(--primmaryColor);
+  padding: 0.7rem;
+  border-radius: 12px;
+}
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
