@@ -4,6 +4,7 @@
   border-radius: 12px;
   margin: 2rem auto;
 }
+
 .title {
   color: var(--primmaryColor);
   text-align: center;
@@ -68,4 +69,15 @@
 .containerCheckbox a {
   color: rgb(77, 77, 245);
   text-decoration: underline;
+}
+@media (min-width: 450px) {
+  .containerForm {
+    max-width: 30rem;
+    margin: auto;
+  }
+  .title {
+    font-size: 25px;
+    font-size: 2.1875rem;
+    font-weight: 900;
+  }
 }

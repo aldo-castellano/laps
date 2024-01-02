@@ -1,6 +1,6 @@
 :root {
   --tablet: 480px;
-  --laptop: 1080px;
+  --laptop: 1080;
   --pc: 1200px;
   --background: #fafafa;
   --backgroundHeader: linear-gradient(

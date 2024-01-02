@@ -6,7 +6,9 @@ import Link from "next/link";
 export default function Form() {
   return (
     <div className={`${styles.container} ${toolStyles.container}`}>
-      <h2 className={styles.title}>Solicitar presupuesto</h2>
+      <h2 id="form" className={styles.title}>
+        Solicitar presupuesto
+      </h2>
       <form className={styles.containerForm}>
         <div className={styles.containerInput}>
           <label>Nombre</label>

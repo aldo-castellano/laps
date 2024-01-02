@@ -68,3 +68,22 @@
   letter-spacing: 2.76px;
   text-align: center;
 }
+
+@media (min-width: 450px) {
+  .container {
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .container_us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70dvh;
+    color: var(--colorTextLigth);
+  }
+  .container_us {
+    max-width: 40%;
+  }
+}
