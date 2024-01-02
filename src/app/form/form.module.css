@@ -46,6 +46,25 @@
   display: flex;
   gap: 1rem;
 }
+.containerCheckbox input {
+  display: flex;
+  gap: 1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: 1px solid var(--primmaryColor);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 4px;
+}
+.containerCheckbox input:checked {
+  -moz-appearance: auto;
+  -webkit-appearance: auto;
+  -o-appearance: auto;
+  appearance: auto;
+  outline: none;
+}
 .containerCheckbox a {
   color: rgb(77, 77, 245);
   text-decoration: underline;

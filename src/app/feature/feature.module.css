@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: #fff;
+  margin: 3rem auto;
+}
+.container h2 {
+  color: var(--primmaryColor);
+  font-size: 25px;
+  font-size: 2.1875rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.cardOne {
+  background: linear-gradient(
+    90deg,
+    #e0bf4a -4.01%,
+    rgba(224, 164, 74, 0.8) -4%,
+    #f67e27 100%
+  );
+}
+.cardTwo {
+  background: linear-gradient(90deg, #4ad7e0 1.6%, #76a2e4 100%);
+}
+.cardThree {
+  background: linear-gradient(90deg, #00f981 1.6%, #4ae0aa 100%);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+.card h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.10938rem;
+}
