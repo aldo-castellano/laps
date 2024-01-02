@@ -2,9 +2,8 @@
   margin: auto;
   width: 95%;
 }
-@media (min-width: var(--tablet)) {
+@media (min-width: 450px) {
   .container {
-    background-color: #282b75;
     width: 60%;
   }
 }

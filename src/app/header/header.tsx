@@ -32,7 +32,7 @@ export default function Header() {
               de limpieza personalizadas que se adaptan a tus necesidades.
               Descubre la comodidad de un espacio impecable con solo un clic.
             </p>{" "}
-            <Button>solicitar presupuesto</Button>
+            <Button link={"#form"}>solicitar presupuesto</Button>
           </div>
         </div>
       </div>
