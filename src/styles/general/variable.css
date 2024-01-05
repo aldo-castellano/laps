@@ -5,12 +5,12 @@
   --background: #fafafa;
   --backgroundHeader: linear-gradient(
     90deg,
-    rgba(74, 214, 224, 0.774) 1.6%,
-    rgba(118, 162, 228, 0.795) 100%
+    rgba(74, 214, 224, 0.374) 1.6%,
+    rgba(118, 162, 228, 0.395) 100%
   );
   --backgroundGradient: linear-gradient(90deg, #4ad7e0 1.6%, #76a2e4 100%);
   --colorTextLigth: #ffffff;
   --roboto: var(--roboto);
   --primaryButton: #ff9700;
-  --primmaryColor: #76a2e4;
+  --primmaryColor: #58c6e1;
 }

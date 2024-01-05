@@ -9,7 +9,7 @@ export default function Form() {
       <h2 id="form" className={styles.title}>
         Solicitar presupuesto
       </h2>
-      <form className={styles.containerForm}>
+      {/* <form className={styles.containerForm}>
         <div className={styles.containerInput}>
           <label>Nombre</label>
           <input type="text" />
@@ -39,7 +39,15 @@ export default function Form() {
           </label>
         </div>
         <Button type="submit">solicitar</Button>
-      </form>
+      </form> */}
+      <iframe
+        src="https://respondto.forms.app/aldofabrizziocastellanop/untitled-form"
+        width="100%"
+        height="750"
+        frameBorder="0"
+      >
+        Cargando…
+      </iframe>
     </div>
   );
 }

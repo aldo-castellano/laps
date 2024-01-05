@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "@/app/header/header.module.css";
 import stylesTools from "@/styles/general/tools.module.css";
-import logo from "@/../public/logos/Logo.svg";
 import headerBackground from "@/../public/image/img-header.jpg";
 import Button from "@/components/generic/button";
 
@@ -25,6 +23,7 @@ export default function Header() {
           </div>
         </div>
         <div className={`${stylesTools.container} ${styles.container_us}`}>
+          <div></div>
           <div className={styles.us}>
             <h2 className={styles.title_us}>¿Listo para empezar?</h2>
             <p>
