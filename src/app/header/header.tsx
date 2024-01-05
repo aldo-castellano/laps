@@ -18,8 +18,8 @@ export default function Header() {
             <p className={styles.subtitle}>LIMPIEZA Y AMBIENTE</p>
           </div>
           <div className={styles.links}>
-            <Link href={"#"}>Contactar</Link>
-            <Link href={"#"}>Presupuesto</Link>
+            {/* <Link href={"#contactar"}>Contactar</Link> */}
+            <Link href={"#form"}>Presupuesto</Link>
           </div>
         </div>
         <div className={`${stylesTools.container} ${styles.container_us}`}>

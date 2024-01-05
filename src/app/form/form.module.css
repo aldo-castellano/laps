@@ -1,7 +1,7 @@
 .container {
   position: relative;
   background-color: #fff;
-  padding: 2rem;
+  padding: 2rem 0;
   border-radius: 12px;
   margin: 9rem auto;
 }
@@ -84,6 +84,9 @@
   text-decoration: underline;
 }
 @media (min-width: 450px) {
+  .container {
+    padding: 2remm;
+  }
   .containerForm {
     max-width: 30rem;
     margin: auto;
