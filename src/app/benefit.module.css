@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 6rem 0;
+  padding: 6rem 0 13rem 0;
   align-items: center;
 }
 .title {
@@ -49,4 +49,9 @@
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
+}
+@media (min-width: 1080px) {
+  .containerBenefit {
+    padding: 6rem 0;
+  }
 }
