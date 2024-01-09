@@ -3,11 +3,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 741px;
 }
 .content_container {
   background: var(--backgroundHeader);
   background: #201f1f59;
   height: 100%;
+  min-height: 741px;
 }
 .content {
   display: flex;
@@ -47,6 +49,7 @@
   justify-content: center;
   height: calc(100dvh - 4rem);
   color: var(--colorTextLigth);
+  min-height: 550px;
 }
 
 .title_us {

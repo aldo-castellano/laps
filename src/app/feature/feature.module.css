@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 3rem;
   color: #fff;
-  /* margin: 6rem auto; */
+  margin-top: -3rem;
 }
 
 .title {
@@ -16,12 +16,7 @@
 }
 
 .cardOne {
-  background: linear-gradient(
-    90deg,
-    #e0bf4a -4.01%,
-    rgba(224, 164, 74, 0.8) -4%,
-    #f67e27 100%
-  );
+  background: linear-gradient(90deg, #efad90 1.6%, #efa44c 100%);
 }
 .cardTwo {
   background: linear-gradient(90deg, #4ad7e0 1.6%, #76a2e4 100%);

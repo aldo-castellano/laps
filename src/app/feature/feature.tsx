@@ -6,7 +6,6 @@ import locationIcon from "@iconify/icons-mdi/location";
 export default function Feature() {
   return (
     <div className={`${toolStyles.container}`}>
-      <h2 className={styles.title}>Sobre Nosotros</h2>
       <div className={`${styles.container}`}>
         <div className={`${styles.containerCard}`}>
           <div className={`${styles.card} ${styles.cardThree}`}>
