@@ -8,9 +8,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <div className={`${styles.container}  `}>
-      <h3 className={styles.title}>Contactanos</h3>
       <div className={`${styles.containerEmail}  ${toolStyles.container}`}>
-        <p>Correo:</p>
         <Link href="mailto:lapservicees@gmail.com">lapservicees@gmail.com</Link>
       </div>
       <div className={`${styles.img}  ${toolStyles.container}`}>
