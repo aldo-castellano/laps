@@ -8,7 +8,7 @@ export default function Benefit() {
     <div className={styles.container}>
       <div className={`${toolStyles.container} ${styles.containerBenefit}`}>
         <div>
-          <h3 className={styles.title}>Que ofrecemos?</h3>
+          <h3 className={styles.title}>¿Que ofrecemos?</h3>
           <p className={styles.text}>
             Nos especializamos en ofrecer servicios de limpieza con un enfoque
             ecoamigable. Utilizamos exclusivamente productos ecológicos para

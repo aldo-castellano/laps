@@ -32,17 +32,16 @@
 }
 .title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
   margin-bottom: 3.5rem;
 }
 .text {
   color: #fff;
-
-  font-size: 1.5rem;
-  font-style: normal;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: normal;
+  line-height: 133.7%;
+  letter-spacing: 2.76px;
 }
 
 .containerBenefit a {
@@ -53,5 +52,14 @@
 @media (min-width: 1080px) {
   .containerBenefit {
     padding: 6rem 0;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
