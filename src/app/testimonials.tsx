@@ -16,11 +16,11 @@ export default function Testimonials() {
         </Link>
 
         <article className={styles.article}>
-          "En Sweek, agradecemos a Lapservice por su colaboración excepcional.
+          {`"En Sweek, agradecemos a Lapservice por su colaboración excepcional.
           Su enfoque en la limpieza de calidad con productos ecológicos ha
           enriquecido nuestra oferta. Lapservice supera nuestras expectativas,
           brindando resultados notables y sostenibles. Valoramos su compromiso y
-          confiabilidad. ¡Una asociación valiosa!"
+          confiabilidad. ¡Una asociación valiosa!"`}
         </article>
       </div>
       <div className={`${styles.card} `}>
@@ -34,13 +34,13 @@ export default function Testimonials() {
           <Image alt="logo sweek" src={imgPopcarte} />
         </Link>
         <article className={styles.article}>
-          "En nombre de Popcarte, queremos expresar nuestra satisfacción por la
+          {`"En nombre de Popcarte, queremos expresar nuestra satisfacción por la
           colaboración con Lapservice. Su enfoque en la limpieza de calidad y el
           uso de productos ecológicos ha mejorado significativamente nuestros
           servicios. Lapservice supera nuestras expectativas, brindando
           resultados notables y sostenibles. Agradecemos a Lapservice por ser un
           socio confiable y comprometido con la excelencia. ¡Una colaboración
-          que realmente valoramos!"
+          que realmente valoramos!"`}
         </article>
       </div>
     </div>
