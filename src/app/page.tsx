@@ -13,7 +13,7 @@ export default function Home() {
 
       <Benefit />
       <Testimonials />
-      <Form />
+      {/* <Form /> */}
       <Contact />
       <Whatsapp />
     </main>

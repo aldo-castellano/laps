@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Righteous } from "next/font/google";
 import "@/styles/general/globals.css";
 import Header from "@/app/header/header";
+import icon from "../../public/logos/Logo.svg";
 
 const roboto = Roboto({
   weight: ["400", "700", "900"],
