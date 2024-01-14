@@ -16,14 +16,13 @@ const righteous = Righteous({
 });
 
 export const metadata: Metadata = {
-  title: "LapService - Servicios de Limpieza Ecológicos",
-  description: "Servicios de limpieza con productos ecológicos en LapService",
-  keywords: "limpieza, servicios, ecológico, productos ecológicos",
-  viewport: "width=device-width, initial-scale=1.0",
-  authors: { name: "Aldo Castellano" },
-  icons: {
-    icon: "../../public/logos/favicon.ico", // /public path
-  },
+  title: "Limpieza de Oficinas y Comercios con Productos Ecológicos | laps",
+  viewport: "width=device-width, initial-scale=1",
+  description:
+    "Descubre nuestros servicios de limpieza ecológica para oficinas y locales comerciales. Utilizamos productos amigables con el medio ambiente para un espacio más saludable y sostenible. ¡Contáctanos hoy!",
+  keywords:
+    "limpieza ecológica, productos ecológicos para oficinas, servicios de limpieza sostenible, limpieza verde para comercios",
+  metadataBase: new URL("https://www.lapservice.es/"),
 };
 
 export default function RootLayout({
