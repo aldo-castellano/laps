@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "@/app/header/header.module.css";
 import stylesTools from "@/styles/general/tools.module.css";
-import headerBackground from "@/../public/image/img-header.png";
+import headerBackground from "@/../public/image/img-header.webp";
 import Button from "@/components/generic/button";
 
 export default function Header() {
