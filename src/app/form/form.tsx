@@ -46,6 +46,7 @@ export default function Form() {
         height="1950"
         frameBorder="0"
         scrolling="no"
+        loading="lazy"
       >
         Cargando…
       </iframe>
