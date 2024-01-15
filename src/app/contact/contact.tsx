@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <div className={`${styles.container}  `}>
       <div className={`${styles.containerEmail}  ${toolStyles.container}`}>
-        <Link href="mailto:lapservicees@gmail.com">lapservicees@gmail.com</Link>
+        {/* <Link href="mailto:lapservicees@gmail.com">lapservicees@gmail.com</Link> */}
       </div>
       <div className={`${styles.img}  ${toolStyles.container}`}>
         <Image sizes="cover" src={img} alt="Mapa de barcelona" />

@@ -43,7 +43,7 @@ export default function Form() {
       <iframe
         src="https://respondto.forms.app/aldofabrizziocastellanop/untitled-form"
         width="100%"
-        height="2050"
+        height="1950"
         frameBorder="0"
         scrolling="no"
       >
