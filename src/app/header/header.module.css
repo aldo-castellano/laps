@@ -1,22 +1,23 @@
 .container {
-  height: 108dvh;
+  height: 94dvh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 741px;
+  -webkit-clip-path: ellipse(138% 53% at 50% 46%);
+  clip-path: ellipse(138% 53% at 50% 46%);
 }
 .content_container {
   background: var(--backgroundHeader);
-  background: #201f1f59;
+  background: #201f1f8c;
   height: 100%;
-  min-height: 741px;
+  min-height: 687px;
 }
 .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--colorTextLigth);
-  height: 4rem;
+  padding: 1rem 0;
 }
 
 .title {
@@ -29,7 +30,6 @@
 .subtitle {
   font-family: var(--righteous);
   line-height: 40%;
-
   font-size: 10px;
   letter-spacing: 0.585px;
 }
@@ -47,9 +47,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100dvh - 4rem);
   color: var(--colorTextLigth);
-  min-height: 550px;
+  height: 73%;
 }
 
 .title_us {
@@ -59,6 +58,9 @@
   line-height: 128.688%; /* 61.77px */
   letter-spacing: 2px;
 }
+.title_us span {
+  color: var(--primaryButton);
+}
 .us {
   display: flex;
   flex-direction: column;
@@ -67,7 +69,7 @@
 .us p {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 133.7%; /* 32.088px */
+  line-height: 1.4;
   letter-spacing: 2.76px;
   text-align: center;
 }
@@ -86,11 +88,14 @@
   .subtitle {
     font-size: 13px;
   }
+
   .container_us {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70dvh;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     color: var(--colorTextLigth);
   }
 
@@ -101,10 +106,14 @@
     line-height: 128.688%; /* 61.77px */
     letter-spacing: 2px;
   }
+  .us {
+    margin-top: 3rem;
+  }
   .us p {
-    font-size: 1.2rem;
-
-    line-height: 153.7%;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
   }
 }
 
@@ -117,5 +126,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
+    align-items: flex-start;
+  }
+  .us {
+    margin: 3rem auto;
   }
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "@/app/header/header.module.css";
 import stylesTools from "@/styles/general/tools.module.css";
-import headerBackground from "@/../public/image/img-header.jpg";
+import headerBackground from "@/../public/image/img-header.png";
 import Button from "@/components/generic/button";
 
 export default function Header() {
@@ -25,7 +25,9 @@ export default function Header() {
         <div className={`${stylesTools.container} ${styles.container_us}`}>
           <div></div>
           <div className={styles.us}>
-            <h2 className={styles.title_us}>¿Listo para empezar?</h2>
+            <h2 className={styles.title_us}>
+              ¿Listo para <span>empezar</span>?
+            </h2>
             <p>
               Simplificamos la limpieza para ti. En LAPS, ofrecemos soluciones
               de limpieza personalizadas que se adaptan a tus necesidades.

@@ -4,7 +4,17 @@
 }
 @media (min-width: 450px) {
   .container {
-    width: 70%;
+    width: 80%;
     max-width: 1120px;
+  }
+}
+@media (min-width: 1080px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 70%;
   }
 }

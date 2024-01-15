@@ -3,12 +3,12 @@
   flex-direction: column;
   gap: 3rem;
   color: #fff;
-  margin-top: -3rem;
+  margin-top: -10vh;
+  position: relative;
 }
 
 .title {
   color: var(--primmaryColor);
-
   font-size: 2.1875rem;
   font-weight: 900;
   text-align: center;

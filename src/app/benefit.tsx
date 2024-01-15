@@ -11,7 +11,8 @@ export default function Benefit() {
           <h3 className={styles.title}>¿Que ofrecemos?</h3>
           <p className={styles.text}>
             Nos especializamos en ofrecer servicios de limpieza con un enfoque
-            ecoamigable. Utilizamos exclusivamente productos ecológicos para
+            ecoamigable.{" "}
+            <span>Utilizamos exclusivamente productos ecológicos</span> para
             garantizar un impacto positivo en el medio ambiente. Nuestro
             compromiso con la limpieza sostenible se refleja en cada detalle,
             brindando un cuidado excepcional para tu hogar o negocio. Descubre
