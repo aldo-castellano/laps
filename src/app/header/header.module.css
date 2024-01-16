@@ -7,7 +7,7 @@
   clip-path: ellipse(138% 53% at 50% 46%);
 }
 .content_container {
- // background: var(--backgroundHeader);
+ /*background: var(--backgroundHeader);*/
   background: #201f1f8c;
   height: 100%;
   min-height: 687px;
