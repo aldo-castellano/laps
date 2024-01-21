@@ -6,11 +6,12 @@ import { Suspense } from "react";
 
 export default function Form() {
   return (
-    <div className={`${styles.container} ${toolStyles.container}`}>
-      <h2 id="form" className={styles.title}>
-        Solicitar presupuesto
-      </h2>
-      {/* <form className={styles.containerForm}>
+    <div className={`${toolStyles.container}`}>
+      <div className={`${styles.container} `}>
+        <h2 id="form" className={styles.title}>
+          Solicitar presupuesto
+        </h2>
+        {/* <form className={styles.containerForm}>
         <div className={styles.containerInput}>
           <label>Nombre</label>
           <input type="text" />
@@ -41,20 +42,21 @@ export default function Form() {
         </div>
         <Button type="submit">solicitar</Button>
       </form> */}
-      {/* <Suspense fallback={<Loading />}> */}
-      <iframe
-        id="form"
-        allow="geolocation; microphone; camera"
-        src="https://respondto.forms.app/aldofabrizziocastellanop/untitled-form"
-        frameBorder="0"
-        style={{
-          width: "100%",
-          minWidth: "100%",
-          height: "2000px",
-          border: "none",
-        }}
-        loading="lazy"
-      ></iframe>
+        {/* <Suspense fallback={<Loading />}> */}
+        <iframe
+          id="form"
+          allow="geolocation; microphone; camera"
+          src="https://respondto.forms.app/aldofabrizziocastellanop/untitled-form"
+          frameBorder="0"
+          style={{
+            width: "100%",
+            minWidth: "100%",
+            height: "2000px",
+            border: "none",
+          }}
+          loading="lazy"
+        ></iframe>
+      </div>
       {/* </Suspense> */}
     </div>
   );
