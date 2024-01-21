@@ -10,7 +10,7 @@ import background from "@/../public/image/img-header.png";
 export default function Header() {
   return (
     <header className={styles.container}>
-      <Image src={background} alt="background" priority placeholder="blur" layout="fit"/>
+      <Image src={background} alt="background" priority placeholder="blur" fill={true}/>
       <div className={styles.content_container}>
         <div className={`${stylesTools.container} ${styles.content}`}>
           <div className={styles.logo}>
