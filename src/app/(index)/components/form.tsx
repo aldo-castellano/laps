@@ -41,15 +41,18 @@ export default function Form() {
         <Button type="submit">solicitar</Button>
       </form> */}
       <iframe
+        id="form"
+        allow="geolocation; microphone; camera"
         src="https://respondto.forms.app/aldofabrizziocastellanop/untitled-form"
-        width="100%"
-        height="1950"
         frameBorder="0"
-        scrolling="no"
+        style={{
+          width: "100%",
+          minWidth: "100%",
+          height: "2000px",
+          border: "none",
+        }}
         loading="lazy"
-      >
-        Cargando…
-      </iframe>
+      ></iframe>
     </div>
   );
 }

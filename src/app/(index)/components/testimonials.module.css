@@ -7,6 +7,10 @@
   width: 13rem;
   margin: auto;
   display: flex;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
 }
 .card {
   display: grid;
