@@ -3,7 +3,7 @@ import styles from "@/app/(index)/components/benefit.module.css";
 import toolStyles from "@/styles/general/tools.module.css";
 import Button from "@/components/generic/button";
 import Image from "next/image";
-import background from "@/../public/image/bgmc.png";
+import background from "@/../public/image/bgmc.webp";
 
 export default function Benefit() {
   return (
@@ -13,9 +13,10 @@ export default function Benefit() {
         alt="fondo de beneficios"
         placeholder="blur"
         loading="lazy"
-        width={800}
-        height={800}
+        width={400}
+        height={600}
         sizes="cover"
+        layout="responsive"
       />
       <div className={`${toolStyles.container} ${styles.containerBenefit}`}>
         <div>
