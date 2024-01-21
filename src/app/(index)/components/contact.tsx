@@ -16,8 +16,7 @@ export default function Contact() {
           alt="Mapa de barcelona"
           placeholder="blur"
           loading="lazy"
-          sizes="100vw"
-    
+          sizes="60vw"
           style={{
             objectFit: "cover",
           }}

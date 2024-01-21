@@ -12,7 +12,7 @@ export default function Testimonials() {
     <div className={`${toolStyles.container} ${styles.container}`}>
       <div className={`${styles.card} `}>
         <Link href={"#"} className={styles.title}>
-          <Image alt="logo sweek" src={imgSweek} loading="lazy" />
+          <Image alt="logo sweek" src={imgSweek} loading="lazy" sizes="208px" />
         </Link>
 
         <article className={styles.article}>
@@ -35,8 +35,7 @@ export default function Testimonials() {
             alt="logo sweek"
             src={imgPopcarte}
             loading="lazy"
-            height="112"
-            width="208"
+            sizes="208px"
           />
         </Link>
         <article className={styles.article}>
