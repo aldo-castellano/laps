@@ -6,7 +6,7 @@ import stylesTools from "@/styles/general/tools.module.css";
 
 import Button from "@/components/generic/button";
 import Image from "next/image";
-import background from "@/../public/image/img-header.png";
+import background from "@/../public/image/img-header.webp";
 
 export default function Header() {
   return (
