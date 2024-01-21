@@ -16,8 +16,8 @@ export default function Header() {
         alt="fondo del header"
         priority
         placeholder="blur"
-        width={800}
-        height={800}
+        width={400}
+        height={600}
         sizes="cover"
       />
       <div className={styles.content_container}>
