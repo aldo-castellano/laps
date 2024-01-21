@@ -6,7 +6,7 @@ import stylesTools from "@/styles/general/tools.module.css";
 
 import Button from "@/components/generic/button";
 import Image from "next/image";
-import background from "@/../public/image/img-header.webp";
+import background from "@/../public/image/img-header.png";
 
 export default function Header() {
   return (
@@ -16,9 +16,6 @@ export default function Header() {
         alt="fondo del header"
         priority
         placeholder="blur"
-        width={400}
-        height={600}
-        sizes="cover"
       />
       <div className={styles.content_container}>
         <div className={`${stylesTools.container} ${styles.content}`}>

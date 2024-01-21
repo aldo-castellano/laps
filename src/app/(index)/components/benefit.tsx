@@ -3,7 +3,7 @@ import styles from "@/app/(index)/components/benefit.module.css";
 import toolStyles from "@/styles/general/tools.module.css";
 import Button from "@/components/generic/button";
 import Image from "next/image";
-import background from "@/../public/image/bgmc.webp";
+import background from "@/../public/image/bgmc.png";
 
 export default function Benefit() {
   return (
