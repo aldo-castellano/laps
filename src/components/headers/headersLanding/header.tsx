@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 import styles from "@/components/headers/headersLanding/header.module.css";
@@ -16,10 +15,6 @@ export default function Header() {
         alt="fondo del header"
         priority
         placeholder="blur"
-        width={400}
-        height={600}
-        sizes="cover"
-        layout="responsive"
       />
       <div className={styles.content_container}>
         <div className={`${stylesTools.container} ${styles.content}`}>
