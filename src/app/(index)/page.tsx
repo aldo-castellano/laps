@@ -8,12 +8,12 @@ import Testimonials from "./components/testimonials";
 export default function Home() {
   return (
     <main>
-      <Feature />
+      {/* <Feature />
       <Benefit />
       <Testimonials />
       <Form />
       <Contact />
-      <Whatsapp />
+      <Whatsapp /> */}
     </main>
   );
 }
