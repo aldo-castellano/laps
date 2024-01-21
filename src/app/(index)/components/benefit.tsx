@@ -8,12 +8,15 @@ import background from "@/../public/image/bgmc.png";
 export default function Benefit() {
   return (
     <div className={styles.container}>
-      {/* <Image
+      <Image
         src={background}
         alt="fondo de beneficios"
         placeholder="blur"
         loading="lazy"
-      /> */}
+        width={800}
+        height={800}
+        sizes="cover"
+      />
       <div className={`${toolStyles.container} ${styles.containerBenefit}`}>
         <div>
           <h3 className={styles.title}>¿Que ofrecemos?</h3>
