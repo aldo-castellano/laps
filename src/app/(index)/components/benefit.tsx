@@ -13,6 +13,11 @@ export default function Benefit() {
         alt="fondo de beneficios"
         placeholder="blur"
         loading="lazy"
+        sizes="100vw"
+        fill
+        style={{
+          objectFit: "cover",
+        }}
       />
       <div className={`${toolStyles.container} ${styles.containerBenefit}`}>
         <div>
