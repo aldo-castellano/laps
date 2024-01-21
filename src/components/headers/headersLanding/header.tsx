@@ -15,6 +15,11 @@ export default function Header() {
         alt="fondo del header"
         priority
         placeholder="blur"
+        sizes="100vw"
+        fill
+        style={{
+          objectFit: "cover",
+        }}
       />
       <div className={styles.content_container}>
         <div className={`${stylesTools.container} ${styles.content}`}>
