@@ -31,7 +31,13 @@ export default function Testimonials() {
       </div>
       <div className={`${styles.card} `}>
         <Link href={"#"} className={styles.title}>
-          <Image alt="logo sweek" src={imgPopcarte} loading="lazy" />
+          <Image
+            alt="logo sweek"
+            src={imgPopcarte}
+            loading="lazy"
+            height="112"
+            width="208"
+          />
         </Link>
         <article className={styles.article}>
           {`"En nombre de Popcarte, queremos expresar nuestra satisfacción por la

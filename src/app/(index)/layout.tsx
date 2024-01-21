@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Roboto, Righteous } from "next/font/google";
 import "@/styles/general/globals.css";
 import Header from "@/components/headers/headersLanding/header";
@@ -13,10 +13,14 @@ const righteous = Righteous({
   subsets: ["latin"],
   variable: "--righteous",
 });
-
+export const viewport: Viewport = { width: "device-width", initialScale: 1 };
 export const metadata: Metadata = {
   title: "Limpieza de Oficinas y Comercios con Productos Ecológicos | laps",
-
+  icons: {
+    icon: "/icons/favicon-16x16.png?v=1", // /public path
+    apple: "/icons/apple-touch-icon.png?v=1",
+    shortcut: "/icons/apple-touch-icon.png",
+  },
   description:
     "Descubre nuestros servicios de limpieza ecológica para oficinas y locales comerciales. Utilizamos productos amigables con el medio ambiente para un espacio más saludable y sostenible. ¡Contáctanos hoy!",
   keywords:
@@ -30,7 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      title="Limpieza de Oficinas y Comercios con Productos Ecológicos | laps"
+    >
       <body
         className={`${righteous.variable} ${roboto.variable} `}
         suppressHydrationWarning={true}
