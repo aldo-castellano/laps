@@ -12,7 +12,15 @@ export default function Contact() {
         {/* <Link href="mailto:lapservicees@gmail.com">lapservicees@gmail.com</Link> */}
       </div>
       <div className={`${styles.img}  ${toolStyles.container}`}>
-        <Image sizes="cover" src={img} alt="Mapa de barcelona" />
+        <Image
+          sizes="cover"
+          src={img}
+          alt="Mapa de barcelona"
+          priority
+          placeholder="blur"
+          width={800}
+          height={800}
+        />
       </div>
     </div>
   );
