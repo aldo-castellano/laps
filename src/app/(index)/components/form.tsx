@@ -44,6 +44,7 @@ export default function Form() {
       </form> */}
         {/* <Suspense fallback={<Loading />}> */}
         <iframe
+          title="formulario"
           id="form"
           allow="geolocation; microphone; camera"
           src="https://respondto.forms.app/aldofabrizziocastellanop/untitled-form"
