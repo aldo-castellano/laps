@@ -13,8 +13,6 @@
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  height: auto;
-  width: auto;
 }
 
 .containerBenefit {
