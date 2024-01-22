@@ -1,4 +1,4 @@
-import styles from "@/styles/components/button.module.css";
+import styles from "./button.module.css";
 import Link from "next/link";
 
 export default function Button({ children, type = "button", id, link }: any) {

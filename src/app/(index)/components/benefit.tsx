@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/app/(index)/components/benefit.module.css";
 import toolStyles from "@/styles/general/tools.module.css";
-import Button from "@/components/generic/button";
+import Button from "@/components/generic/button/button";
 import Image from "next/image";
 import background from "@/../public/image/bgmc.webp";
 

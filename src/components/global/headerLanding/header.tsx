@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import styles from "@/components/headers/headersLanding/header.module.css";
+import styles from "@/components/global/headerLanding/header.module.css";
 import stylesTools from "@/styles/general/tools.module.css";
 
-import Button from "@/components/generic/button";
+import Button from "@/components/generic/button/button";
 import Image from "next/image";
 import background from "@/../public/image/img-header.webp";
 
@@ -16,7 +16,6 @@ export default function Header() {
         priority
         placeholder="blur"
         sizes="100vw"
-        fill
         style={{
           objectFit: "cover",
         }}
