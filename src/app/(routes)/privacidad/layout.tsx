@@ -1,7 +1,4 @@
-import type { Metadata } from "next";
-import { Roboto, Righteous } from "next/font/google";
-import "@/styles/general/globals.css";
-import Header from "@/components/headers/headerRoutes/header";
+import Header from "@/components/global/headerRoutes/header";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
