@@ -12,7 +12,9 @@ export default function Home() {
       <Steps />
       <Benefit />
       <Testimonials />
+
       <Feature />
+
       <Form />
       <Contact />
       <Whatsapp />
