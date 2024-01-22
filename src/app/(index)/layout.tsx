@@ -17,7 +17,11 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1 };
 export const metadata: Metadata = {
   title: "Limpieza de Oficinas y Comercios con Productos Ecológicos | laps",
   icons: {
-    icon: "/icons/favicon-16x16.png?v=1", // /public path
+    icon: [
+      "/icons/favicon-16x16.png?v=1",
+      "/icons/favicon-32x32.png?v=1",
+      "/icons/android-chrome-192x192.png?v=1",
+    ], // /public path
     apple: "/icons/apple-touch-icon.png?v=1",
     shortcut: "/icons/apple-touch-icon.png",
   },
