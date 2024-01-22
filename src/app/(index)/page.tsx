@@ -11,7 +11,7 @@ export default function Home() {
       <Feature />
       <Benefit />
       <Testimonials />
-      {/* <Form /> */}
+      <Form />
       <Contact />
       <Whatsapp />
     </main>
