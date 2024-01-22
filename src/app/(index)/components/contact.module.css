@@ -21,4 +21,7 @@
   display: flex;
   align-items: center;
   border-radius: 14px;
+  max-width: 900px;
+  max-height: 400px;
+  margin: 7rem auto 0rem auto;
 }

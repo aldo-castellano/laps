@@ -1,0 +1,82 @@
+.background {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.title {
+  font-size: 2.1875rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.title span {
+  color: #efa44c;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.step {
+  font-size: 1.3rem;
+  margin: 1rem 0 0 0;
+  font-weight: 700;
+}
+.cardTitle {
+  margin: 1rem 0;
+}
+.card {
+  width: 100%;
+  padding: 2rem;
+}
+.card svg {
+  display: block;
+  margin: 2rem auto 0 auto;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.cardOne svg {
+  color: #76a2e4;
+}
+
+.cardTwo svg {
+  color: #00dd72;
+}
+
+.cardThree svg {
+  color: #efa44c;
+}
+
+.cardOne {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+@media (min-width: 1080px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    gap: 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+  }
+  .cardOne {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+  }
+  .title {
+    font-size: 3rem;
+    text-align: start;
+
+    margin-bottom: 4rem;
+  }
+}

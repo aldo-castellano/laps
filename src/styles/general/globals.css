@@ -28,3 +28,6 @@ img {
   height: 100%;
   max-width: 100%;
 }
+p {
+  letter-spacing: 1px;
+}
