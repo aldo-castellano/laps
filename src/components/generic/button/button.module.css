@@ -12,6 +12,7 @@
   padding: 0.8rem 1rem;
   margin: 2rem auto 0 auto;
   text-align: center;
+  box-shadow: 2px 2px 15px 3px #0000003d;
 }
 @media (min-width: 450px) {
   .button {

@@ -1,7 +1,7 @@
 import Form from "./components/form";
 import Feature from "./components/feature";
 import Contact from "./components/contact";
-import Whatsapp from "./components/wharsapp";
+import Whatsapp from "../../components/global/whatsapp/whatsapp";
 import Benefit from "./components/benefit";
 import Testimonials from "./components/testimonials";
 

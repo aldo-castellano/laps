@@ -4,6 +4,7 @@
   padding: 2rem 0;
   border-radius: 12px;
   margin: 9rem auto -8rem auto;
+  box-shadow: 7px 12px 40px -8px #0000003d;
 }
 .container::after {
   content: "";

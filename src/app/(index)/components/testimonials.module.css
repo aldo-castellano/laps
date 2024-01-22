@@ -1,9 +1,11 @@
 .container {
   margin-top: -5rem;
   display: grid;
+  box-shadow: 7px 12px 40px -8px #0000003d;
+  border-radius: 14px;
 }
 .title img {
-  height: 7rem;
+  height: auto;
   width: 13rem;
   margin: auto;
   display: flex;
@@ -69,8 +71,10 @@
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, minmax(32rem, 1fr));
+    grid-template-rows: repeat(2, minmax(25rem, 1fr));
     margin-top: -10rem;
+    width: 62%;
+    max-width: 950px;
   }
   .card:nth-child(1) {
     grid-area: 1 / 1 / 2 / 2;
@@ -111,7 +115,7 @@
     line-height: 128.688%;
   }
   .article {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1280px) {

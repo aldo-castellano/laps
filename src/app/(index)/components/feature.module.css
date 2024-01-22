@@ -35,6 +35,7 @@
   padding: 2rem 3rem 3rem 3rem;
   border-radius: 12px;
   height: 100%;
+  box-shadow: 7px 12px 40px -8px #0000003d;
 }
 .card svg {
   width: 3rem;
