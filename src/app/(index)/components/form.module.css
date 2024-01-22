@@ -18,7 +18,7 @@
 }
 
 .title {
-  color: var(--primmaryColor);
+  color: var(--primaryButton);
   text-align: center;
   margin: 2rem 0 0 0;
   font-size: 2.1875rem;
@@ -91,7 +91,7 @@
 }
 @media (min-width: 450px) {
   .container {
-    padding: 2remm;
+    padding: 2rem;
   }
   .containerForm {
     max-width: 30rem;

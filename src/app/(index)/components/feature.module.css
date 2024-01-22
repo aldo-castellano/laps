@@ -2,31 +2,37 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  color: #fff;
-  margin-top: -10vh;
+  color: black;
+  margin-top: 10vh;
   position: relative;
 }
 
 .title {
-  color: var(--primmaryColor);
   font-size: 2.1875rem;
   font-weight: 900;
   text-align: center;
-  margin: 9rem auto 7rem auto;
+  margin: 4rem auto 0 auto;
+}
+.title span {
+  color: #efa44c;
 }
 
-.cardOne {
-  background: linear-gradient(90deg, #efad90 1.6%, #efa44c 100%);
+.cardOne .cardTitle,
+.cardOne svg {
+  color: #efa44c;
 }
-.cardTwo {
-  background: linear-gradient(90deg, #4ad7e0 1.6%, #76a2e4 100%);
-}
+.cardTwo .cardTitle,
 .cardTwo svg {
+  color: #76a2e4;
+}
+.card svg {
   width: 3.5rem;
   height: 3.5rem;
+  margin: 0 auto;
 }
-.cardThree {
-  background: linear-gradient(90deg, #00dd72 1.6%, #4ae0aa 100%);
+.cardThree .cardTitle,
+.cardThree svg {
+  color: #00dd72;
 }
 .card {
   display: flex;
@@ -36,12 +42,9 @@
   border-radius: 12px;
   height: 100%;
   box-shadow: 7px 12px 40px -8px #0000003d;
+  background-color: white;
 }
-.card svg {
-  width: 3rem;
-  height: 3rem;
-  margin: auto;
-}
+
 .card h3 {
   text-align: center;
   font-size: 1.6rem;

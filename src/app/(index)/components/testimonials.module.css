@@ -13,6 +13,7 @@
   object-fit: contain;
   -o-object-position: center;
   object-position: center;
+  margin-bottom: 1rem;
 }
 .card {
   display: grid;
@@ -44,9 +45,8 @@
 .article {
   color: #5b5b5b;
   font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 128.688%;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .card:nth-child(1) {
@@ -60,11 +60,13 @@
 .card:nth-child(3) {
   grid-area: 3 / 1 / 4 / 2;
   background: linear-gradient(90deg, #efad90 1.6%, #efa44c 100%);
+  display: none;
 }
 
 .card:nth-child(4) {
   grid-area: 4 / 1 / 5 / 2;
   border-radius: 0 0 14px 14px;
+  border-top: 1px solid #97979742;
 }
 
 @media (min-width: 1080px) {
@@ -87,10 +89,12 @@
   .card:nth-child(3) {
     grid-area: 2 / 1 / 3 / 2;
     border-radius: 0 0 0 14px;
+    display: block;
   }
   .card:nth-child(4) {
     grid-area: 2 / 2 / 3 / 3;
     border-radius: 0 0 14px 0;
+    border: none;
   }
   .card:nth-child(2) h3,
   .card:nth-child(3) h3 {

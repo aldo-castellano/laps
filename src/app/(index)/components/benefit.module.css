@@ -1,8 +1,8 @@
 .container {
   position: relative;
   width: 100%;
-  min-height: 46rem;
-  margin-top: 5rem;
+  min-height: 41rem;
+  /* margin-top: 5rem; */
 }
 .container > img {
   z-index: -1;
@@ -36,7 +36,6 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 133.7%;
-  letter-spacing: 2.76px;
 }
 .text span {
   color: var(--primaryButton);
@@ -48,9 +47,9 @@
   height: min-content;
 }
 @media (min-width: 1080px) {
-  .container {
-    margin-top: 14rem;
-  }
+  /* .container {
+    margin-top: 10rem;
+  } */
 
   .containerBenefit {
     padding: 6rem 0;
