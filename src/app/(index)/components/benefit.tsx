@@ -20,6 +20,11 @@ export default function Benefit() {
           layout="responsive"
           style={{
             objectFit: "cover",
+            zIndex: "-1",
+            position: "absolute",
+            filter: "brightness(0.5)",
+            objectPosition: "center",
+            minHeight: "100%",
           }}
         />
         <div className={`${toolStyles.container} ${styles.containerBenefit}`}>

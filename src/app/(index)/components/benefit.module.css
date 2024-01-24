@@ -2,19 +2,6 @@
   position: relative;
   width: 100%;
   min-height: 41rem;
-
-  /* margin-top: 5rem; */
-}
-.container > img {
-  z-index: -1;
-  position: absolute;
-  -webkit-filter: brightness(0.5);
-  filter: brightness(0.5);
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  min-height: 100%;
 }
 
 .containerBenefit {
