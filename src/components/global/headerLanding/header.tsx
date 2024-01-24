@@ -10,7 +10,7 @@ import background from "@/../public/image/img-header.webp";
 export default function Header() {
   return (
     <header className={styles.container}>
-    <Image
+      <Image
         quality={100}
         src={background}
         alt="fondo del header"
