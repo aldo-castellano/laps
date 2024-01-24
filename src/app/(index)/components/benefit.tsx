@@ -17,7 +17,7 @@ export default function Benefit() {
         placeholder="blur"
         loading="lazy"
         sizes="100vw"
-        fill
+        layout="responsive"
         style={{
           objectFit: "cover",
         }}
