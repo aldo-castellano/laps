@@ -6,13 +6,15 @@ import locationIcon from "@iconify/icons-mdi/location";
 
 export default function Steps() {
   return (
-    <div className={` ${styles.background} ${toolStyles.animationScroll}`}>
+    <section className={` ${styles.background} `}>
       <div className={` ${toolStyles.container} `}>
         <h2 className={styles.title}>
           ¿Cómo <span>Empezar?</span>
         </h2>
         <div className={`${styles.content} `}>
-          <div className={`${styles.card} ${styles.cardThree}`}>
+          <div
+            className={`${styles.card} ${styles.cardThree} ${toolStyles.animationScroll}`}
+          >
             <p className={styles.step}>1.</p>
             <div>
               <h3 className={styles.cardTitle}>
@@ -28,7 +30,9 @@ export default function Steps() {
             <Icon icon="fluent:form-48-filled" />
           </div>
 
-          <div className={`${styles.card} ${styles.cardOne}`}>
+          <div
+            className={`${styles.card} ${styles.cardOne} ${toolStyles.animationScroll}`}
+          >
             <p className={styles.step}>2.</p>
             <div>
               <h3 className={styles.cardTitle}>
@@ -45,7 +49,9 @@ export default function Steps() {
             <Icon icon="bxs:chat" />
           </div>
 
-          <div className={`${styles.card} ${styles.cardTwo}`}>
+          <div
+            className={`${styles.card} ${styles.cardTwo} ${toolStyles.animationScroll}`}
+          >
             <p className={styles.step}>3.</p>
             <div>
               <h3 className={styles.cardTitle}>
@@ -63,6 +69,6 @@ export default function Steps() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

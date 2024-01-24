@@ -14,4 +14,8 @@
   color: #fff;
   width: 2.5rem;
   height: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../../public/icons/whatsapp.svg");
+  background-size: contain;
 }
