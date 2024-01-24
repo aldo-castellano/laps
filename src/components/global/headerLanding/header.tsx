@@ -10,7 +10,7 @@ import background from "@/../public/image/img-header.webp";
 export default function Header() {
   return (
     <header className={styles.container}>
-      <Image
+   {/* <Image
         src={background}
         alt="fondo del header"
         priority
@@ -19,7 +19,7 @@ export default function Header() {
         style={{
           objectFit: "cover",
         }}
-      />
+      /> */}
       <div className={styles.content_container}>
         <div className={`${stylesTools.container} ${styles.content}`}>
           <div className={styles.logo}>
