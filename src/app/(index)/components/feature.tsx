@@ -10,7 +10,9 @@ export default function Feature() {
         Mas sobre <span>nosotros</span>
       </h2>
       <div className={`${styles.container}`}>
-        <div className={`${styles.containerCard}`}>
+        <div
+          className={`${styles.containerCard} ${toolStyles.animationScroll}`}
+        >
           <div className={`${styles.card} ${styles.cardThree}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +35,9 @@ export default function Feature() {
           </div>
         </div>
 
-        <div className={`${styles.containerCard}`}>
+        <div
+          className={`${styles.containerCard} ${toolStyles.animationScroll}`}
+        >
           <div className={`${styles.card} ${styles.cardOne}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +59,9 @@ export default function Feature() {
             </p>
           </div>
         </div>
-        <div className={`${styles.containerCard}`}>
+        <div
+          className={`${styles.containerCard} ${toolStyles.animationScroll}`}
+        >
           <div className={`${styles.card} ${styles.cardTwo}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

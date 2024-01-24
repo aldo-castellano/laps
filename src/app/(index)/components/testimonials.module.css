@@ -1,5 +1,5 @@
 .container {
-  margin-top: -5rem;
+  margin-top: -9rem;
   display: grid;
   box-shadow: 7px 12px 40px -8px #0000003d;
   border-radius: 14px;
@@ -74,8 +74,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(25rem, 1fr));
-    margin-top: -10rem;
-    width: 62%;
+    margin-top: -2rem;
+
+    width: 80%;
     max-width: 950px;
   }
   .card:nth-child(1) {

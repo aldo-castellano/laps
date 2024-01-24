@@ -1,9 +1,8 @@
 import Form from "./components/form";
 import Feature from "./components/feature";
-import Contact from "./components/contact";
+import Footer from "./components/footer";
 import Whatsapp from "../../components/global/whatsapp/whatsapp";
 import Benefit from "./components/benefit";
-import Testimonials from "./components/testimonials";
 import Steps from "./components/steps";
 
 export default function Home() {
@@ -11,11 +10,11 @@ export default function Home() {
     <main>
       <Steps />
       <Benefit />
-      <Testimonials />
+
       <Feature />
-      {/* <Form /> */}
-      <Contact />
-      {/* <Whatsapp /> */}
+      <Form />
+      <Footer />
+      <Whatsapp />
     </main>
   );
 }
