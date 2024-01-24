@@ -20,6 +20,15 @@ export default function Header() {
         sizes="100vw"
         style={{
           objectFit: "cover",
+          position: "absolute",
+          zIndex: "-1",
+          filter: "brightness(0.5)",
+          objectPosition: " center",
+          maxWidth: "100vw",
+          top: "0",
+          bottom: "0",
+          minHeight: "100%",
+          maxHeight: "100%",
         }}
       />
       <div className={styles.content_container}>
