@@ -17,6 +17,7 @@ export default function Contact() {
           placeholder="blur"
           loading="lazy"
           sizes="60vw"
+          layout="responsive"
           style={{
             objectFit: "cover",
           }}
