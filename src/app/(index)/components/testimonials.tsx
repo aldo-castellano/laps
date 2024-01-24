@@ -9,7 +9,9 @@ import Image from "next/image";
 
 export default function Testimonials() {
   return (
-    <div className={`${toolStyles.container} ${styles.container}`}>
+    <div
+      className={`${toolStyles.container}  ${toolStyles.animationScroll} ${styles.container}`}
+    >
       <div className={`${styles.card} `}>
         <Link href={"#"} className={styles.title}>
           <Image alt="logo sweek" src={imgSweek} loading="lazy" sizes="208px" />

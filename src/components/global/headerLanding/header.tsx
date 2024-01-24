@@ -15,6 +15,7 @@ export default function Header() {
         src={background}
         alt="fondo del header"
         priority
+        layout="responsive"
         placeholder="blur"
         sizes="100vw"
         style={{
