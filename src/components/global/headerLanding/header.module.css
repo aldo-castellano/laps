@@ -5,21 +5,7 @@
   -webkit-clip-path: ellipse(138% 53% at 50% 46%);
   clip-path: ellipse(138% 53% at 50% 46%);
 }
-.container > img {
-  position: absolute;
-  z-index: -1;
-  -webkit-filter: brightness(0.5);
-  filter: brightness(0.5);
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  max-width: 100vw;
-  top: 0;
-  bottom: 0;
-  min-height: 100%;
-  max-height: 100%;
-}
+
 .content_container {
   height: 100%;
   min-height: 687px;
