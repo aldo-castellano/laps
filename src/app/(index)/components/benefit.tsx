@@ -7,7 +7,10 @@ import background from "@/../public/image/bgmc.webp";
 
 export default function Benefit() {
   return (
-    <div className={styles.container}>
+    <section
+      id="#animationScroll"
+      className={`${toolStyles.container} ${toolStyles.animationScroll} ${styles.container}`}
+    >
       <Image
         src={background}
         alt="fondo de beneficios"
@@ -35,6 +38,6 @@ export default function Benefit() {
         </div>
         <Button link={"#form"}>solicitar presupuesto</Button>
       </div>
-    </div>
+    </section>
   );
 }

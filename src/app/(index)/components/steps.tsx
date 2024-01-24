@@ -6,8 +6,8 @@ import locationIcon from "@iconify/icons-mdi/location";
 
 export default function Steps() {
   return (
-    <div className={styles.background}>
-      <div className={` ${toolStyles.container}`}>
+    <div className={` ${styles.background} ${toolStyles.animationScroll}`}>
+      <div className={` ${toolStyles.container} `}>
         <h2 className={styles.title}>
           ¿Cómo <span>Empezar?</span>
         </h2>

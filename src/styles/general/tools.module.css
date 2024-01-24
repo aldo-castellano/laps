@@ -18,3 +18,33 @@
     width: 70%;
   }
 }
+
+.animationScroll {
+  opacity: 0;
+  -webkit-animation: scrolls linear both;
+
+  animation: scrolls linear both;
+
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+@-webkit-keyframes scrolls {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrolls {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

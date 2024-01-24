@@ -5,7 +5,7 @@ import locationIcon from "@iconify/icons-mdi/location";
 
 export default function Feature() {
   return (
-    <div className={`${toolStyles.container}`}>
+    <div className={`${toolStyles.container} ${toolStyles.animationScroll}`}>
       <h2 className={styles.title}>
         Mas sobre <span>nosotros</span>
       </h2>
