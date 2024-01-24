@@ -19,7 +19,13 @@ export default function Footer() {
           sizes="60vw"
           layout="responsive"
           style={{
-            objectFit: "cover",
+            objectFit: "contain",
+            display: "flex",
+            alignItems: "center",
+            borderRadius: "14px",
+            maxWidth: "900px",
+            maxHeight: "400px",
+            margin: "7rem auto 0rem auto",
           }}
         />
       </div>
