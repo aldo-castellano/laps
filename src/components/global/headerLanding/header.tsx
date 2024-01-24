@@ -11,11 +11,10 @@ export default function Header() {
   return (
     <header className={styles.container}>
       <Image
-        quality={100}
         src={background}
         alt="fondo del header"
         priority
-        fill
+        layout="responsive"
         placeholder="blur"
         sizes="100vw"
         style={{
