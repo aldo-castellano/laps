@@ -7,9 +7,10 @@
 
 .content_container {
   height: 100%;
-  min-height: 687px;
+
   background: linear-gradient(90deg, #4ad6e033 1.6%, #76a2e433 100%);
   -webkit-backdrop-filter: brightness(0.4);
+  padding: 0 0 30px 0;
   backdrop-filter: brightness(0.4);
 }
 .content {
@@ -74,6 +75,12 @@
 }
 
 @media (min-width: 450px) {
+  .container {
+    height: auto;
+  }
+  .content_container {
+    padding: 0 0 30px 0;
+  }
   .title {
     font-size: 55px;
   }
