@@ -75,7 +75,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(25rem, 1fr));
-
+    margin-top: -13rem;
     width: 80%;
     max-width: 950px;
   }
