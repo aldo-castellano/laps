@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./testimonials.module.css";
 import toolStyles from "@/styles/general/tools.module.css";
-import Button from "@/components/generic/button/button";
+
 import imgSweek from "@/../public/logos/sweeek-logo-es (1) 1.svg";
 import imgPopcarte from "@/../public/logos/Popcarte.svg";
 import Link from "next/link";
