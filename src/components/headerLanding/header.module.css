@@ -31,7 +31,8 @@
 .subtitle {
   font-family: var(--righteous);
   line-height: 40%;
-  font-size: 10px;
+  font-size: 9px;
+  text-wrap: nowrap;
 }
 
 .links {
@@ -40,7 +41,7 @@
   letter-spacing: 2px;
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .container_us {
@@ -86,6 +87,9 @@
   }
   .subtitle {
     font-size: 13px;
+  }
+  .links {
+    gap: 1rem;
   }
 
   .container_us {
