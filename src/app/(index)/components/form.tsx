@@ -3,7 +3,7 @@ import styles from "./form.module.css";
 import toolStyles from "@/styles/general/tools.module.css";
 import Link from "next/link";
 import { Suspense } from "react";
-import Loading from "../loading";
+import Loading from "../../loading";
 
 export default function Form() {
   return (

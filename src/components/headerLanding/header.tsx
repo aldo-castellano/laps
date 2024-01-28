@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import styles from "@/components/global/headerLanding/header.module.css";
+import styles from "@/components/headerLanding/header.module.css";
 import stylesTools from "@/styles/general/tools.module.css";
 
-import Button from "@/components/generic/button/button";
+import Button from "@/components/button/button";
 import Image from "next/image";
 import background from "@/../public/image/img-header.webp";
 
@@ -22,7 +22,7 @@ export default function Header() {
           objectFit: "cover",
           position: "absolute",
           zIndex: "-1",
-          filter: "brightness(0.5)",
+
           objectPosition: " center",
           maxWidth: "100vw",
           top: "0",
@@ -33,13 +33,14 @@ export default function Header() {
       />
       <div className={styles.content_container}>
         <div className={`${stylesTools.container} ${styles.content}`}>
-          <div className={styles.logo}>
+          <Link href="/">
             <h1 className={styles.title}>LAPS</h1>
             <p className={styles.subtitle}>LIMPIEZA Y AMBIENTE</p>
-          </div>
+          </Link>
           <div className={styles.links}>
             {/* <Link href={"#contactar"}>Contactar</Link> */}
             <Link href={"#form"}>Presupuesto</Link>
+            <Link href={"/privacidad"}>Privacidad</Link>
           </div>
         </div>
         <div className={`${stylesTools.container} ${styles.container_us}`}>

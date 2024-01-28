@@ -1,3 +1,9 @@
+import Main from "./components/main";
+
 export default function Privacidad() {
-  return <main>holaa</main>;
+  return (
+    <main>
+      <Main />
+    </main>
+  );
 }

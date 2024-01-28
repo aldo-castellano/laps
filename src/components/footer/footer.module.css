@@ -1,13 +1,19 @@
 .container {
-  background: var(--backgroundGradient);
+  background: linear-gradient(90deg, #4ad6e0a6 1.6%, #76a2e4a6 100%);
   border-radius: 12px 12px 0 0;
   padding: 3rem 0 4rem 0;
+  z-index: -1;
+  position: relative;
+  -webkit-backdrop-filter: brightness(0);
+
+  backdrop-filter: brightness(0);
 }
 
 .containerEmail {
   display: flex;
   gap: 0.5rem;
   color: var(--colorTextLigth);
+
   font-size: 1.5rem;
   margin: 3rem auto;
   max-width: 45rem;

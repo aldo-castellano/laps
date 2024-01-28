@@ -3,6 +3,7 @@
   display: grid;
   box-shadow: 7px 12px 40px -8px #0000003d;
   border-radius: 14px;
+  margin-top: -7rem;
 }
 .title img {
   height: auto;
@@ -74,7 +75,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(25rem, 1fr));
-    margin-top: -2rem;
 
     width: 80%;
     max-width: 950px;

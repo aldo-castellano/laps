@@ -1,6 +1,6 @@
 .background {
   background-color: white;
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
 }
 
 .title {
@@ -54,6 +54,9 @@
   border-bottom: 1px solid #000;
 }
 @media (min-width: 1080px) {
+  .background {
+    padding: 4rem 0;
+  }
   .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
