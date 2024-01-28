@@ -8,9 +8,7 @@ import Testimonials from "./testimonials";
 
 export default function Benefit() {
   return (
-    <section
-      className={`${toolStyles.container} ${toolStyles.animationScroll} `}
-    >
+    <section className={`${toolStyles.animationScroll} `}>
       <div className={` ${styles.container}`}>
         <Image
           src={background}
@@ -25,6 +23,7 @@ export default function Benefit() {
             filter: "brightness(0.5)",
             objectPosition: "center",
             minHeight: "100%",
+            maxHeight: "100%",
           }}
         />
         <div className={`${toolStyles.container} ${styles.containerBenefit}`}>

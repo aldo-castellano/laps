@@ -36,10 +36,6 @@
   height: min-content;
 }
 @media (min-width: 1080px) {
-  /* .container {
-    margin-top: 10rem;
-  } */
-
   .containerBenefit {
     padding: 6rem 0;
   }

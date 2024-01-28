@@ -4,9 +4,10 @@
   padding: 3rem 0 4rem 0;
   z-index: -1;
   position: relative;
-  -webkit-backdrop-filter: brightness(0);
 
-  backdrop-filter: brightness(0);
+  -webkit-backdrop-filter: brightness(0.5);
+
+  backdrop-filter: brightness(0.5);
 }
 
 .containerEmail {
