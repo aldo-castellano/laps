@@ -1,6 +1,5 @@
 .container {
   height: 664px;
-
   position: relative;
   -webkit-clip-path: ellipse(138% 53% at 50% 46%);
   clip-path: ellipse(138% 53% at 50% 46%);
@@ -11,7 +10,6 @@
   min-height: 687px;
   background: linear-gradient(90deg, #4ad6e033 1.6%, #76a2e433 100%);
   -webkit-backdrop-filter: brightness(0.4);
-
   backdrop-filter: brightness(0.4);
 }
 .content {
