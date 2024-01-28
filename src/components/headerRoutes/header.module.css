@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  -webkit-clip-path: ellipse(138% 53% at 50% 46%);
+  clip-path: ellipse(138% 53% at 50% 46%);
+  background: linear-gradient(90deg, #4ad6e0a6 1.6%, #76a2e4a6 100%);
+
+  -webkit-backdrop-filter: brightness(0);
+
+  backdrop-filter: brightness(0);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--colorTextLigth);
+  padding: 1rem 0;
+}
+
+.title {
+  font-family: var(--righteous);
+  font-size: 55px;
+  font-size: 40px;
+  line-height: 128.688%; /* 70.778px */
+  letter-spacing: 4.675px;
+}
+.subtitle {
+  font-family: var(--righteous);
+
+  font-size: 10px;
+}
+
+.links {
+  font-size: 1rem;
+  line-height: 128.688%; /* 30.885px */
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}

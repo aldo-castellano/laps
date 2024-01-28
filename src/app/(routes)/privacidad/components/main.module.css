@@ -1,0 +1,11 @@
+.container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.title {
+  text-align: center;
+  margin: 7rem auto 4rem auto;
+}
+.text span {
+  font-weight: 600;
+}
