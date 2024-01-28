@@ -1,6 +1,5 @@
 .container {
   height: 664px;
-
   position: relative;
   -webkit-clip-path: ellipse(138% 53% at 50% 46%);
   clip-path: ellipse(138% 53% at 50% 46%);
