@@ -1,4 +1,4 @@
-import Button from "@/components/generic/button/button";
+import Button from "@/components/button/button";
 import styles from "./form.module.css";
 import toolStyles from "@/styles/general/tools.module.css";
 import Link from "next/link";
