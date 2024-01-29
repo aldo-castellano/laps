@@ -11,7 +11,7 @@ export default function Home() {
       <Benefit />
 
       <Feature />
-      <Form />
+      {/* <Form /> */}
 
       <Whatsapp />
     </main>

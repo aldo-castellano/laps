@@ -1,6 +1,6 @@
 import Header from "@/components/headerRoutes/header";
 import "@/styles/general/globals.css";
-import Footer from "@/components/footer/footer";
+// import Footer from "@/components/footer/footer";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
   metadataBase: new URL("https://www.lapservice.es/privacidad"),
 };
-export default function Layout({
-  children, // will be a page or nested layout
+export default function LayoutRoutes({
+  children,
 }: {
   children: React.ReactNode;
 }) {

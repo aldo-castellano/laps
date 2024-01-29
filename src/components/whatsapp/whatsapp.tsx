@@ -8,7 +8,7 @@ export default function Whatsapp() {
   return (
     <div className={`${styles.container}  `}>
       <Link href="https://wa.me/34678144504" target="_blank">
-        <Image src={whatsappImg} alt="icono de whatsapp" />
+        <Image src={whatsappImg} alt="icono de whatsapp" priority />
       </Link>
     </div>
   );
