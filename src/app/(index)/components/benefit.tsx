@@ -15,7 +15,8 @@ export default function Benefit() {
           alt="fondo de beneficios"
           placeholder="blur"
           loading="lazy"
-          layout="responsive"
+          fill
+          sizes="100vw"
           style={{
             objectFit: "cover",
             zIndex: "-1",

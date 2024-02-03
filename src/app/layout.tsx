@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Roboto, Righteous } from "next/font/google";
 import "@/styles/general/globals.css";
+import Header from "@/components/headerLanding/header";
+import Footer from "@/components/footer/footer";
 
 const roboto = Roboto({
   weight: ["400", "700", "900"],
@@ -45,7 +47,9 @@ export default function RootLayout({
         className={`${righteous.variable} ${roboto.variable} `}
         suppressHydrationWarning={true}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
