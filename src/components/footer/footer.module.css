@@ -8,6 +8,7 @@
   -webkit-backdrop-filter: brightness(0.5);
 
   backdrop-filter: brightness(0.5);
+  min-height: 700px;
 }
 
 .containerEmail {

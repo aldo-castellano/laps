@@ -2,7 +2,6 @@
 import styles from "./steps.module.css";
 import toolStyles from "@/styles/general/tools.module.css";
 import { Icon } from "@iconify/react";
-import locationIcon from "@iconify/icons-mdi/location";
 
 export default function Steps() {
   return (

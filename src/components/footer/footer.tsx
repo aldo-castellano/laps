@@ -16,8 +16,8 @@ export default function Footer() {
           alt="Mapa de barcelona"
           placeholder="blur"
           loading="lazy"
-          sizes="60vw"
-          layout="responsive"
+          sizes="50vw"
+          fill
           style={{
             objectFit: "contain",
             display: "flex",
@@ -25,7 +25,7 @@ export default function Footer() {
             borderRadius: "14px",
             maxWidth: "900px",
             maxHeight: "400px",
-            margin: "7rem auto 0rem auto",
+            margin: "11rem auto 0rem auto",
           }}
         />
       </div>

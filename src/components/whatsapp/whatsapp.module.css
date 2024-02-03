@@ -10,9 +10,9 @@
   right: 1rem;
 }
 .container a,
-.container svg {
+.container img {
   color: #fff;
+  padding: 0.6rem;
   width: 2.5rem;
   height: 2.5rem;
- 
 }
