@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  /* Material Design 3 Palette (Mapped to Lapservice Brand) */
+  /* Primary: Forest Green */
+  --color-primary: oklch(38.27% 0.057 146.45);
+  --color-primary-foreground: oklch(98% 0.01 146.45);
+  
+  /* Secondary: Sage */
+  --color-secondary: oklch(72.5% 0.04 146.45);
+  --color-secondary-foreground: oklch(20% 0.02 146.45);
+  
+  /* Accent/Tertiary: Amber (Action Color) */
+  --color-accent: oklch(68.61% 0.177 75.34);
+  --color-accent-foreground: oklch(100% 0 0);
+
+  /* Surface / Neutral */
+  --color-background: oklch(98% 0.01 75.34); /* Japandi Crema */
+  --color-foreground: oklch(25% 0.02 260); /* Navy deep */
+  
+  --color-surface: oklch(100% 0 0);
+  --color-surface-variant: oklch(92% 0.02 146.45);
+  
+  --color-muted: oklch(85% 0.02 146.45);
+  --color-muted-foreground: oklch(45% 0.04 146.45);
+  
+  --color-border: oklch(90% 0.02 146.45);
+  
+  /* Typography */
+  --font-inter: var(--font-inter);
+  --font-outfit: var(--font-outfit);
+
+  /* MD3 Radius Tokens */
+  --radius-xs: 0.25rem;   /* 4px */
+  --radius-sm: 0.5rem;    /* 8px */
+  --radius-md: 0.75rem;   /* 12px */
+  --radius-lg: 1rem;      /* 16px */
+  --radius-xl: 1.5rem;    /* 24px */
+  --radius-2xl: 1.75rem;  /* 28px */
+  --radius-full: 9999px;
+
+  /* Elevation (MD3 Shadows) */
+  --shadow-level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit font-bold tracking-tight;
+  }
+}
+
+/* Glassmorphism Refined */
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@utility layout-section {
+  @apply py-20 lg:py-32;
+}
+
+@utility layout-container {
+  @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+@utility animation-scroll {
+  opacity: 0;
+  animation: scrolls-in linear both;
+  animation-timeline: view();
+  animation-range: entry -5% cover 30%;
+}
+
+@keyframes scrolls-in {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
