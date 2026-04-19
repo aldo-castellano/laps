@@ -1,89 +1,79 @@
-import styles from "./feature.module.css";
-import toolStyles from "@/styles/general/tools.module.css";
-import { Icon } from "@iconify/react";
-import locationIcon from "@iconify/icons-mdi/location";
+import React from "react";
+
+const FEATURES = [
+  {
+    title: "Barcelona local",
+    description: "Operamos exclusivamente en Barcelona para garantizar una respuesta ágil y personalizada. Conocemos tu ciudad.",
+    iconColor: "oklch(38.27% 0.057 146.45)",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+      </svg>
+    )
+  },
+  {
+    title: "100% Ecológicos",
+    description: "Nuestros productos son certificados, biodegradables y seguros para mascotas y niños. Limpiamos con conciencia.",
+    iconColor: "oklch(72.5% 0.04 146.45)",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2L4 7v10l8 5 8-5V7l-8-5z"/><path d="M12 22V12"/><path d="M20 7l-8 5-8-5"/>
+      </svg>
+    )
+  },
+  {
+    title: "Servicio premium",
+    description: "No solo limpiamos, transformamos ambientes. Nuestro estándar de excelencia garantiza satisfacción total.",
+    iconColor: "oklch(68.61% 0.177 75.34)",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+      </svg>
+    )
+  }
+];
 
 export default function Feature() {
   return (
-    <div className={`${toolStyles.container} ${toolStyles.animationScroll}`}>
-      <h2 className={styles.title}>
-        Mas sobre <span>nosotros</span>
-      </h2>
-      <div className={`${styles.container}`}>
-        <div
-          className={`${styles.containerCard} ${toolStyles.animationScroll}`}
-        >
-          <div className={`${styles.card} ${styles.cardThree}`}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"
-              />
-            </svg>{" "}
-            <h3 className={styles.cardTitle}>Localidad</h3>
-            <p>
-              Ofrecemos servicios de limpieza de alta calidad exclusivamente en
-              Barcelona. Nuestro equipo local garantiza atención personalizada y
-              resultados excepcionales. Confía en nosotros para un servicio
-              confiable y eficiente en tu área.
-            </p>
-          </div>
+    <section className="layout-section bg-background overflow-hidden">
+      <div className="layout-container">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 lg:mb-24 gap-8">
+           <div className="lg:w-2/3">
+              <h2 className="text-sm font-bold text-secondary tracking-widest uppercase mb-4">NUESTROS VALORES</h2>
+              <h3 className="text-4xl sm:text-6xl font-outfit font-bold text-foreground leading-[1.1]">
+                Más sobre <span className="text-primary italic font-light font-outfit">nosotros</span>
+              </h3>
+           </div>
+           <p className="lg:w-1/3 text-foreground/60 text-sm leading-relaxed">
+             En LAPS creemos que un espacio limpio es un espacio feliz. Nos esforzamos por ofrecer la máxima calidad con el mínimo impacto ambiental.
+           </p>
         </div>
-
-        <div
-          className={`${styles.containerCard} ${toolStyles.animationScroll}`}
-        >
-          <div className={`${styles.card} ${styles.cardOne}`}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M12 6V5l-1.875 1.875q-.025.025-.4.125q-.25 0-.387-.213t-.013-.437L10 5V4q-.425 0-.712-.288T9 3q0-.425.288-.712T10 2h5q.425 0 .713.288T16 3v.775q0 .125-.025.213T15.9 4.2L15 6zm-2 16q-.825 0-1.412-.587T8 20v-4.925q0-.25.05-.487t.175-.463l3.2-6.05q.275-.5.738-.788T13.2 7H15q.425 0 .713.288T16 8v12q0 .825-.587 1.413T14 22z"
-              />
-            </svg>
-            <h3 className={styles.cardTitle}>Productos</h3>
-            <p>
-              Descubre nuestra línea ecoamigable de productos de limpieza.
-              Cuidamos el planeta con fórmulas biodegradables y envases
-              reciclables. Únete a la sostenibilidad sin comprometer la
-              eficacia. ¡Limpia con conciencia!
-            </p>
-          </div>
-        </div>
-        <div
-          className={`${styles.containerCard} ${toolStyles.animationScroll}`}
-        >
-          <div className={`${styles.card} ${styles.cardTwo}`}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="m16.24 11.51l1.57-1.57l-3.75-3.75l-1.57 1.57l-4.14-4.13c-.78-.78-2.05-.78-2.83 0l-1.9 1.9c-.78.78-.78 2.05 0 2.83l4.13 4.13L3 17.25V21h3.75l4.76-4.76l4.13 4.13c.95.95 2.23.6 2.83 0l1.9-1.9c.78-.78.78-2.05 0-2.83zm-7.06-.44L5.04 6.94l1.89-1.9L8.2 6.31L7.02 7.5l1.41 1.41l1.19-1.19l1.45 1.45zm7.88 7.89l-4.13-4.13l1.9-1.9l1.45 1.45l-1.19 1.19l1.41 1.41l1.19-1.19l1.27 1.27zm3.65-11.92a.996.996 0 0 0 0-1.41l-2.34-2.34c-.47-.47-1.12-.29-1.41 0l-1.83 1.83l3.75 3.75z"
-              />
-            </svg>
-            <h3 className={styles.cardTitle}>Servicios</h3>
-            <p>
-              Experimenta excelencia con nuestro servicio de limpieza.
-              Garantizamos resultados impecables, atención personalizada y
-              puntualidad. Tu satisfacción es nuestra prioridad. Descubre un
-              estándar superior en limpieza.
-            </p>
-          </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          {FEATURES.map((feat, i) => (
+            <div key={i} className="animation-scroll group">
+               <div className="h-full p-0 flex flex-col transition-all duration-300">
+                  <div className="mb-8 p-6 rounded-3xl bg-surface shadow-level-1 inline-block w-fit transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:shadow-level-2" style={{ color: feat.iconColor }}>
+                    {feat.icon}
+                  </div>
+                  
+                  <h4 className="text-2xl font-outfit font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                    {feat.title}
+                  </h4>
+                  
+                  <p className="text-foreground/60 leading-relaxed text-base">
+                    {feat.description}
+                  </p>
+                  
+                  <div className="mt-8 flex items-center gap-2 text-primary font-bold text-xs tracking-widest opacity-0 transform translate-x-[-8px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 cursor-pointer">
+                    SABER MÁS 
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                  </div>
+               </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

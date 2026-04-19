@@ -1,55 +1,72 @@
+"use client";
 import React from "react";
-import styles from "./testimonials.module.css";
-import toolStyles from "@/styles/general/tools.module.css";
-
 import imgSweek from "@/../public/logos/sweeek-logo-es (1) 1.svg";
 import imgPopcarte from "@/../public/logos/Popcarte.svg";
-import Link from "next/link";
 import Image from "next/image";
+
+const REVIEWS = [
+  {
+    logo: imgSweek,
+    alt: "logo sweek",
+    text: "En Sweek, agradecemos a Lapservice por su colaboración excepcional. Su enfoque en la limpieza de calidad con productos ecológicos ha enriquecido nuestra oferta. Una asociación valiosa.",
+    author: "Sweeek Business Team"
+  },
+  {
+    logo: imgPopcarte,
+    alt: "logo popcarte",
+    text: "Su enfoque en la limpieza de calidad y el uso de productos ecológicos ha mejorado significativamente nuestros servicios. Lapservice supera nuestras expectativas con resultados sostenibles.",
+    author: "Popcarte Spain"
+  }
+];
 
 export default function Testimonials() {
   return (
-    <div
-      className={`${toolStyles.container}  ${toolStyles.animationScroll} ${styles.container}`}
-    >
-      <div className={`${styles.card} `}>
-        <Link href={"#"} className={styles.title}>
-          <Image alt="logo sweek" src={imgSweek} loading="lazy" sizes="208px" />
-        </Link>
+    <section className="layout-section bg-background">
+      <div className="layout-container animation-scroll relative z-10">
+        <div className="bg-surface rounded-3xl lg:rounded-[3rem] p-8 sm:p-12 lg:p-16 shadow-level-1 border border-border">
+          <header className="mb-12 text-center lg:text-left flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+            <div className="max-w-xl">
+              <h3 className="text-sm font-bold text-primary tracking-widest uppercase mb-4">NUESTROS CLIENTES</h3>
+              <h4 className="text-4xl sm:text-5xl font-outfit font-bold text-foreground tracking-tight">
+                Testimonios de <span className="text-secondary italic font-light">confianza.</span>
+              </h4>
+            </div>
+            <p className="max-w-xs text-foreground/50 text-xs font-medium uppercase tracking-widest leading-relaxed">
+               Empresas en Barcelona que ya respiran la tranquilidad LAPS.
+            </p>
+          </header>
 
-        <article className={styles.article}>
-          {`"En Sweek, agradecemos a Lapservice por su colaboración excepcional.
-          Su enfoque en la limpieza de calidad con productos ecológicos ha
-          enriquecido nuestra oferta. Lapservice supera nuestras expectativas,
-          brindando resultados notables y sostenibles. Valoramos su compromiso y
-          confiabilidad. ¡Una asociación valiosa!"`}
-        </article>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {REVIEWS.map((review, i) => (
+              <div key={i} className="flex flex-col h-full group">
+                <div className="bg-surface-variant/30 rounded-[2rem] p-8 lg:p-10 flex-grow border border-transparent transition-all duration-300 hover:shadow-level-2 hover:border-primary/10">
+                  <div className="h-12 mb-8 flex items-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all">
+                     <Image 
+                      alt={review.alt} 
+                      src={review.logo} 
+                      className="h-full w-auto object-contain max-w-[140px]" 
+                    />
+                  </div>
+                  
+                  <article className="text-foreground/80 text-base italic leading-relaxed mb-8 font-inter">
+                    &quot;{review.text}&quot;
+                  </article>
+                  
+                  <div className="flex items-center gap-4">
+                     <div className="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">
+                         {review.author[0]}
+                     </div>
+                     <div>
+                        <p className="text-xs font-bold text-foreground uppercase tracking-wider">{review.author}</p>
+                        <p className="text-[10px] text-muted-foreground uppercase tracking-widest">Cliente Verificado</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-      <div className={`${styles.card} `}>
-        <h3 className={styles.title}>Lo que dicen nuestros clientes</h3>
-      </div>
-      <div className={`${styles.card} `}>
-        <h3 className={styles.title}>Confianza</h3>
-      </div>
-      <div className={`${styles.card} `}>
-        <Link href={"#"} className={styles.title}>
-          <Image
-            alt="logo sweek"
-            src={imgPopcarte}
-            loading="lazy"
-            sizes="208px"
-          />
-        </Link>
-        <article className={styles.article}>
-          {`"En nombre de Popcarte, queremos expresar nuestra satisfacción por la
-          colaboración con Lapservice. Su enfoque en la limpieza de calidad y el
-          uso de productos ecológicos ha mejorado significativamente nuestros
-          servicios. Lapservice supera nuestras expectativas, brindando
-          resultados notables y sostenibles. Agradecemos a Lapservice por ser un
-          socio confiable y comprometido con la excelencia. ¡Una colaboración
-          que realmente valoramos!"`}
-        </article>
-      </div>
-    </div>
+    </section>
   );
 }
