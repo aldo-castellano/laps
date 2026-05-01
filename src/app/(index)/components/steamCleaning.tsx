@@ -1,16 +1,17 @@
 import React from "react";
 import Button from "@/components/button/button";
 import Image from "next/image";
+import { whatsappUrl } from "@/lib/seo";
 
 export default function SteamCleaning() {
   return (
-    <div className="layout-container animation-scroll my-20 lg:my-32">
+    <div className="layout-container animation-scroll my-20 lg:my-32 ">
       <div className="relative overflow-hidden rounded-3xl lg:rounded-[3rem] bg-primary group shadow-level-3">
         {/* Background Image with MD3 Overlay */}
         <div className="absolute inset-0 z-0">
           <Image 
             src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop"
-            alt="Limpieza a vapor baño"
+            alt="Limpieza profunda a vapor para baños, cocinas y locales en Barcelona"
             fill
             className="object-cover opacity-15 grayscale transition-transform duration-700 group-hover:scale-110"
           />
@@ -21,7 +22,7 @@ export default function SteamCleaning() {
         <div className="relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 p-8 sm:p-12 lg:p-20 items-center">
           <div>
             <div className="inline-block py-1.5 px-4 rounded-full bg-white/10 text-white text-xs font-bold tracking-widest uppercase mb-8 backdrop-blur-sm border border-white/20">
-              TRATAMIENTO DE CHOQUE
+              LIMPIEZA PROFUNDA A VAPOR
             </div>
             
             <h2 className="text-4xl sm:text-6xl font-outfit font-bold text-white leading-[1.1] mb-8">
@@ -30,14 +31,14 @@ export default function SteamCleaning() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-10 text-white/80 max-w-lg">
-              Especialmente diseñado para <strong>baños y cocinas</strong>. Eliminamos el 99.9% de gérmenes y cal sin residuos químicos. Saludable para ti, letal para la suciedad.
+              Un refuerzo ideal para <strong>baños, cocinas, oficinas y locales comerciales</strong>. La limpieza a vapor ayuda a desincrustar cal, grasa y suciedad difícil sin perder el cuidado premium del espacio.
             </p>
             
             <ul className="space-y-5 mb-12">
               {[
-                "Desinfección biológica profunda",
-                "Ideal para juntas, azulejos y campanas",
-                "Certificado 100% libre de químicos"
+                "Limpieza profunda para zonas críticas",
+                "Ideal para juntas, azulejos, baños y cocinas",
+                "Menos residuos químicos y acabado más cuidado"
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-white/90 group/item">
                   <span className="size-6 rounded-full bg-secondary/20 flex items-center justify-center mr-4 transition-colors group-hover/item:bg-secondary/40">
@@ -51,8 +52,8 @@ export default function SteamCleaning() {
             </ul>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button link="https://wa.me/34678144504" variant="tonal" size="lg" className="bg-white/10 text-white hover:bg-white/20 border border-white/10">
-                Reservar tratamiento
+              <Button link={whatsappUrl} variant="tonal" size="lg" className="bg-white/10 text-white hover:bg-white/20 border border-white/10">
+                Pedir limpieza profunda
               </Button>
             </div>
           </div>
@@ -66,9 +67,9 @@ export default function SteamCleaning() {
                   </div>
                </div>
                
-               <h4 className="text-3xl font-outfit font-bold text-white mb-6">¿Por qué vapor?</h4>
+               <h3 className="text-3xl font-outfit font-bold text-white mb-6">¿Por qué vapor?</h3>
                <p className="text-white/70 text-sm leading-relaxed mb-8">
-                 El vapor a alta presión desincrusta la suciedad que los productos tradicionales no pueden alcanzar, sin dañar superficies delicadas y asegurando un ambiente libre de alérgenos.
+                 El vapor a alta presión llega donde una limpieza superficial no basta: juntas, azulejos, rincones, grasa y zonas de uso intensivo. Es una solución puntual muy útil para negocios que quieren recuperar sensación de limpieza profunda.
                </p>
                
                <div className="flex items-end justify-between">

@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { displayPhone, email, whatsappUrl } from "@/lib/seo";
 
 export default function Footer() {
   return (
-    <footer className="bg-foreground text-white/90 pt-24 pb-12 overflow-hidden relative">
+    <footer id="contacto" className="bg-primary text-white/90 pt-24 pb-12 overflow-hidden relative">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
       
       <div className="layout-container">
@@ -12,9 +13,9 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-8">
-              <h1 className="font-outfit text-4xl text-primary font-bold tracking-tighter">
-                LAPS<span className="text-secondary">.</span>
-              </h1>
+              <span className="block font-outfit text-4xl text-white font-bold tracking-tighter">
+                LAPS<span className="text-white">.</span>
+              </span>
               <p className="font-inter text-[10px] tracking-[0.2em] font-medium opacity-50 uppercase">LIMPIEZA & AMBIENTE</p>
             </Link>
             <p className="text-white/60 max-w-md text-lg leading-relaxed mb-8">
@@ -36,7 +37,7 @@ export default function Footer() {
             <h4 className="font-outfit font-bold text-white uppercase tracking-widest text-xs mb-8">Navegación</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li><Link href="/" className="hover:text-primary transition-colors">Inicio</Link></li>
-              <li><Link href="#servicios" className="hover:text-primary transition-colors">Servicios</Link></li>
+              
               <li><Link href="#contacto" className="hover:text-primary transition-colors">Presupuesto</Link></li>
               <li><Link href="/privacidad" className="hover:text-primary transition-colors">Privacidad</Link></li>
             </ul>
@@ -48,11 +49,11 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex flex-col">
                 <span className="text-white/40 text-[10px] uppercase font-bold mb-1">WhatsApp</span>
-                <Link href="https://wa.me/34678144504" className="text-lg hover:text-primary transition-colors">+34 678 144 504</Link>
+                <Link href={whatsappUrl} className="text-lg hover:text-primary transition-colors">{displayPhone}</Link>
               </li>
               <li className="flex flex-col">
                 <span className="text-white/40 text-[10px] uppercase font-bold mb-1">Email</span>
-                <span className="text-lg text-white/80">hola@lapservice.es</span>
+                <Link href={`mailto:${email}`} className="text-lg text-white/80">{email}</Link>
               </li>
               <li className="flex flex-col">
                 <span className="text-white/40 text-[10px] uppercase font-bold mb-1">Localización</span>
@@ -64,9 +65,9 @@ export default function Footer() {
 
         {/* Legal & Map Teaser */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:row items-center justify-between gap-6 text-[10px] font-bold uppercase tracking-widest text-white/30">
-           <p>© 2024 LAPS CLEANING SERVICES. TODOS LOS DERECHOS RESERVADOS.</p>
+           <p>© 2026 LAPS CLEANING SERVICES. TODOS LOS DERECHOS RESERVADOS.</p>
            <div className="flex gap-8">
-              <span>Hecho con ❤️ en BCN</span>
+              <span>Hecho con ❤️ en BCN por Aldo Castellano</span>
            </div>
         </div>
       </div>
