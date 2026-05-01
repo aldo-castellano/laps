@@ -3,7 +3,7 @@
 @theme {
   /* Material Design 3 Palette (Mapped to Lapservice Brand) */
   /* Primary: Forest Green */
-  --color-primary: oklch(38.27% 0.057 146.45);
+  --color-primary: oklch(0.3 0.04 146.45);
   --color-primary-foreground: oklch(98% 0.01 146.45);
   
   /* Secondary: Sage */
@@ -16,7 +16,7 @@
 
   /* Surface / Neutral */
   --color-background: oklch(98% 0.01 75.34); /* Japandi Crema */
-  --color-foreground: oklch(25% 0.02 260); /* Navy deep */
+  --color-foreground: oklch(0.3 0.04 146.45); /* Navy deep */
   
   --color-surface: oklch(100% 0 0);
   --color-surface-variant: oklch(92% 0.02 146.45);

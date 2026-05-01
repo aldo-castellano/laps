@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import whatsappImg from "@/../public/icons/whatsapp.svg";
+import { whatsappUrl } from "@/lib/seo";
 
 export default function Whatsapp() {
   return (
@@ -12,7 +13,7 @@ export default function Whatsapp() {
       </div>
       
       <Link 
-        href="https://wa.me/34678144504" 
+        href={whatsappUrl}
         target="_blank" 
         className="relative block w-14 h-14 bg-[#25D366] rounded-2xl shadow-lg border-2 border-white/20 transition-all duration-300 hover:scale-110 active:scale-95 group-hover:shadow-2xl flex items-center justify-center p-3.5"
       >

@@ -21,7 +21,7 @@ const STEPS = [
     id: 3,
     title: "Limpieza premium",
     description: "Nuestro equipo experto se encarga de todo usando productos certificados que solo dejan brillo natural.",
-    icon: "ph:sparkles-fill",
+    icon: "mdi:spray-bottle",
     color: "#3a5a40"
   }
 ];
@@ -69,6 +69,7 @@ export default function Steps() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
