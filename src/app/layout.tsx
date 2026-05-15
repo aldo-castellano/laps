@@ -4,6 +4,10 @@ import type { ReactNode } from "react";
 import { Inter, Outfit } from "next/font/google";
 import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/footer/footer";
+import {
+  GoogleTagManagerBody,
+  GoogleTagManagerHead,
+} from "@/components/analytics/google-tag-manager";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -50,7 +54,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${inter.variable} ${outfit.variable}`}>
+      <head>
+        <GoogleTagManagerHead />
+      </head>
       <body className="font-inter antialiased overflow-x-hidden">
+        <GoogleTagManagerBody />
         <Navbar />
         {children}
         <Footer />
