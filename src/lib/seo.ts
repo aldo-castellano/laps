@@ -1,4 +1,4 @@
-export const siteUrl = "https://www.lapservice.es/";
+export const siteUrl = "https://www.lapservice.es";
 export const businessName = "LAPS";
 export const phone = "+34678144504";
 export const displayPhone = "+34 678 144 504";
